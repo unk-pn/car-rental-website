@@ -35,6 +35,14 @@ body {
     background-color: white;
 }
 
+.button.white-button {
+    background-color: white;
+}
+
+.button.white-button:hover {
+    background-color: #f8ff23;
+}
+
 .main {
     overflow: hidden;
     position: relative;
@@ -134,4 +142,118 @@ body {
     top: 78px;
     right: -576px;
     z-index: -1;
+}
+
+/* CARS */
+
+.cars {
+    background-color: black;
+    padding: 120px 0;
+}
+
+.cars h2 {
+    font-size: 65px;
+    font-weight: normal;
+}
+
+.cars-content {
+    display: flex;
+    padding: 60px;
+}
+
+.cars-filter {
+    margin-right: 77px;
+}
+
+.cars-filter ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    list-style: none;
+}
+
+.cars-filter ul li {
+    width: 127px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid white;
+    font-size: 16px;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+}
+
+.cars-filter ul li.active, .cars-filter ul li:hover {
+    color: #f8ff23;
+    border-color: #f8ff23;
+}
+
+.cars-items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.car {
+    background-color: #212121;
+    padding: 20px;
+    display: flex;
+}
+
+.car img {
+    max-width: 568px;
+}
+
+.car-details {
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-details h4 {
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+
+.car-details p {
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: normal;
+    color: #d4d4d4;
+    height: 100px;
+}
+
+.car-action {
+    margin-top: auto;
+}
+
+.car-action ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.car-period {
+    color: #d4d4d4;
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 5px;
+}
+
+.car-price {
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.car-price span {
+    font-size: 16px;
+    line-height: 120%;
+    color: #d4d4d4;
+}
+
+.car-action .button {
+    width: 100%;
 }
