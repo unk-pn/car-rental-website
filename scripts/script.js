@@ -27,17 +27,21 @@ filterItems.forEach(item => {
 
 document.getElementById('order-action').addEventListener('click', function() {
     const fields = [carField, nameField, phoneField];
-
     let hasError = false;
 
     fields.forEach((field) => {
         if (field.value.trim() === '') {
-            field.style.borderColor ='red';
+            field.style.borderColor = 'red';
             hasError = true;
         } else {
             field.style.borderColor = 'white';
         }
     });
+    
+    if (phoneField.value.trim().length < 10) {
+        phoneField.style.borderColor = 'red';
+        hasError = true;
+    }
 
     if (!hasError) {
         alert('Спасибо за заявку! Мы скоро свяжемся с вами');
